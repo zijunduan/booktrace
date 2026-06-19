@@ -1,0 +1,335 @@
+QWidget {
+  background: #F2E9DA;
+  color: #2F2923;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+QFrame#Card,
+QFrame#bookCard,
+QFrame#thoughtCard,
+QFrame#MemoryCard {
+  background: #FFF8ED;
+  border: 1px solid #D8C39B;
+  border-radius: 14px;
+}
+
+QLabel {
+  background: transparent;
+  color: #2F2923;
+}
+
+QLabel#Title {
+  color: #2F2923;
+  font-family: "KaiTi", "STKaiti", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+QLabel#Subtitle {
+  color: #766858;
+  font-size: 15px;
+}
+
+QLabel#FieldLabel {
+  color: #766858;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+QLabel#StatusLabel {
+  font-size: 13px;
+  min-height: 18px;
+}
+
+QLabel#TraceInfo {
+  color: #9A8977;
+  font-size: 14px;
+}
+
+QLabel#StatusLabel[state="success"] {
+  color: #5E7A5A;
+}
+
+QLabel#StatusLabel[state="error"],
+QLabel#ErrorLabel {
+  color: #A15C4A;
+}
+
+QLabel#ErrorLabel {
+  font-size: 13px;
+  min-height: 16px;
+}
+
+QLineEdit,
+QTextEdit {
+  background: #FFFCF6;
+  border: 1px solid #D8C39B;
+  border-radius: 10px;
+  color: #2F2923;
+  padding: 10px 12px;
+  selection-background-color: #D8C39B;
+}
+
+QLineEdit {
+  font-size: 18px;
+}
+
+QTextEdit {
+  font-family: "KaiTi", "STKaiti", "SimSun", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI";
+  font-size: 20px;
+  line-height: 180%;
+}
+
+QLineEdit:focus,
+QTextEdit:focus {
+  border: 1px solid #B89152;
+  background: #FFFEFB;
+}
+
+QLineEdit[hasError="true"],
+QTextEdit[hasError="true"] {
+  border: 1px solid #B66A55;
+}
+
+QPushButton {
+  border-radius: 10px;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI";
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 30px;
+  min-width: 88px;
+  padding: 7px 16px;
+}
+
+QPushButton#PrimaryButton {
+  background: #4A4038;
+  border: 1px solid #4A4038;
+  color: #FFF8ED;
+  min-width: 96px;
+}
+
+QPushButton#PrimaryButton:hover {
+  background: #3E352D;
+  border-color: #3E352D;
+}
+
+QPushButton#PrimaryButton:pressed {
+  background: #2F2923;
+}
+
+QPushButton#SecondaryButton {
+  background: #FFFCF6;
+  border: 1px solid #D8C39B;
+  color: #4A4038;
+}
+
+QPushButton#SecondaryButton:hover {
+  background: #F7E8D0;
+  border-color: #C7A96F;
+}
+
+QPushButton#WeakButton {
+  background: transparent;
+  border: 1px solid #D8C39B;
+  color: #7A6A58;
+}
+
+QPushButton#WeakButton:hover {
+  background: #F7E8D0;
+  border-color: #C7A96F;
+  color: #4A4038;
+}
+
+QPushButton#InlineLinkButton {
+  background: transparent;
+  border: 0;
+  color: #8A6A3F;
+  font-size: 14px;
+  font-weight: 700;
+  min-height: 20px;
+  min-width: 34px;
+  padding: 0 2px;
+}
+
+QPushButton#InlineLinkButton:hover {
+  color: #4A4038;
+  text-decoration: underline;
+}
+
+QPushButton#InlineLinkButton:disabled {
+  color: #C7B8A5;
+}
+
+QMenu {
+  background: #FFF8ED;
+  border: 1px solid #D8C39B;
+  border-radius: 8px;
+  color: #2F2923;
+  padding: 6px;
+}
+
+QMenu::item {
+  border-radius: 6px;
+  padding: 7px 28px 7px 12px;
+}
+
+QMenu::item:selected {
+  background: #F7E8D0;
+}
+
+QMenu::separator {
+  height: 1px;
+  background: #D8C39B;
+  margin: 6px 8px;
+}
+
+QSplitter::handle {
+  background: transparent;
+}
+
+QScrollBar:vertical {
+  background: transparent;
+  width: 8px;
+  margin: 0;
+}
+
+QScrollBar::handle:vertical {
+  background: #D8C39B;
+  border-radius: 4px;
+  min-height: 28px;
+}
+
+QScrollBar::handle:vertical:hover {
+  background: #C7A96F;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+  height: 0;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+  background: transparent;
+}
+
+QListWidget#bookList {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+QListWidget#bookList::item {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+QListWidget#bookList::item:selected {
+  background: transparent;
+}
+
+QFrame#bookCard {
+  background: #FFF8ED;
+  border: 1px solid #D8C39B;
+  border-radius: 12px;
+}
+
+QFrame#bookCard[selected="true"] {
+  background: #F7E8D0;
+  border: 1px solid #B89152;
+}
+
+QFrame#bookStripe {
+  background: #EADDC8;
+  border: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+QFrame#bookStripe[selected="true"] {
+  background: #9B7A45;
+}
+
+QLabel#bookCardTitle {
+  color: #2F2923;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+QLabel#bookCardCount {
+  color: #7A6A58;
+  font-size: 13px;
+}
+
+QScrollArea#thoughtScroll {
+  background: transparent;
+  border: 0;
+}
+
+QWidget#thoughtList {
+  background: transparent;
+}
+
+QLabel#LibraryDetailTitle {
+  color: #2F2923;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+QFrame#thoughtCard {
+  background: #FFF8ED;
+  border: 1px solid #D8C39B;
+  border-radius: 12px;
+}
+
+QLabel#thoughtMeta {
+  color: #9A8977;
+  font-size: 14px;
+}
+
+QLabel#thoughtContent {
+  color: #2F2923;
+  font-family: "KaiTi", "STKaiti", "SimSun", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI";
+  font-size: 18px;
+  line-height: 170%;
+}
+
+QLabel#emptyText {
+  color: #A19280;
+  font-size: 14px;
+}
+
+QDialog#MemoryDialog {
+  background: #F2E9DA;
+}
+
+QDialog#MemoryDialog QLabel#Title {
+  font-size: 30px;
+}
+
+QLabel#MemoryBook {
+  color: #4A4038;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+QLabel#MemoryContent {
+  color: #2F2923;
+  font-family: "KaiTi", "STKaiti", "SimSun", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI";
+  font-size: 18px;
+  line-height: 180%;
+}
+
+QLabel#MemoryMeta {
+  color: #9A8977;
+  font-size: 14px;
+}
+
+QFrame#QuoteStripe {
+  background: #D8C39B;
+  border: 0;
+  border-radius: 2px;
+}

@@ -14,7 +14,13 @@ dist/
 *.spec
 
 # Local runtime data
-data/
+data/config.json
+data/notes/*
+data/backups/
+
+# Keep examples / structure
+!data/config.example.json
+!data/notes/.gitkeep
 
 # Logs
 *.log
